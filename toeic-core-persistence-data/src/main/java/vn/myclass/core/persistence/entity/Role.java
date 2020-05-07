@@ -13,6 +13,14 @@ public class Role {
     @Column(name = "name")
     private String name;
 
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
+    }
+
     @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
     private List<User> userList;
     

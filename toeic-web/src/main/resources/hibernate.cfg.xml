@@ -16,5 +16,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <mapping class="vn.myclass.core.persistence.entity.Role"/>
         <mapping class="vn.myclass.core.persistence.entity.User"/>
+        <mapping class="vn.myclass.core.persistence.entity.ListenGuideline"/>
+        <mapping class="vn.myclass.core.persistence.entity.Comment"/>
     </session-factory>
 </hibernate-configuration>
