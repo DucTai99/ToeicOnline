@@ -22,6 +22,18 @@ public class User {
     @Column(name = "createdate")
     private Timestamp createDate;
 
+    @ManyToOne
+    @Column(name = "roleid")
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     public Integer getUserId() {
         return userId;
     }
